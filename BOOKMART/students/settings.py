@@ -1,3 +1,7 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 """
 Django settings for students project.
 
@@ -25,10 +29,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ig8$d1nzh!y&_tu+=09y)!o*xl(qgq(8yx67*_a_+lt#@&3v5$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['https://bookmart-lg7j.onrender.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -82,15 +86,15 @@ WSGI_APPLICATION = 'students.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'students',
-        'USER': 'postgres',
-        'PASSWORD': '1234',  # Replace with your actual password
-        'HOST': 'localhost',  # Set to your database host
-        'PORT': '5432',  # Default PostgreSQL port
-        
-
+        'NAME': 'bookmart',
+        'USER': 'mouli',
+        'PASSWORD': 'new_secure_password',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
+
 
 
 # Password validation

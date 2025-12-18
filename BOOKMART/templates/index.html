@@ -26,10 +26,9 @@
                 <div class="col">
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
                         <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-                            <div class="logo"><a href="index.html">BookMart</a></div> {# Changed "Notegyra" to "BookMart" #}
+                            <div class="logo"><a href="index.html">BookMart</a></div> 
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
-                                {% url 'index' as home_url %}
                                 <li class="{% if request.path == home_url %}active{% endif %}">
                                 <a href="{{ home_url }}">Home</a>
                                 </li>
